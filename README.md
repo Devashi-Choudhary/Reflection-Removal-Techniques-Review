@@ -2,27 +2,37 @@
 
 The image of an object can vary dramatically depending on lighting, specularities/reflections, and shadows. Thus, removing undesired reflections from images is of great importance in computer vision and image processing. It means to enhance the image quality for aesthetic purposes as well as to preprocess images in machine learning and pattern recognition applications. Thus, the goal of the project is to review various techniques that are used for removing reflection from the image.
 
+![GIF](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/20200712_224304.gif)
+
+
 # Dependencies
+python
 
-opencv==4.2.0
+opencv
 
-keras==2.3.1
+Pytorch (torch & torchvision)
 
-tensorflow>=1.15.2
+imutils
 
-imutils==0.5.3
+matplotlib
 
-numpy==1.18.2
+argparse
 
-matplotlib==3.2.1
+numpy
 
-argparse==1.1 
+skimage
 
-pandas==0.23.4
+tqdm
 
-scipy==1.1.0
+pandas
+
+scipy
 
 MATLAB
+
+# Dataset
+
+The sample image used for testing is provided by [SIR2 benchmark dataset](https://sir2data.github.io/).
 
 # How to execute code
 
@@ -44,6 +54,52 @@ You can go [here](https://github.com/yyhz76/reflectSuppress) and run `reflection
 
 You can go [here](https://github.com/alexch1/ImageProcessing) and run `reflecSuppress.m `
 
+5. **Reflection Removal using Deep Learning :** Single-image reflection removal method based on generative adversarial networks. 
+
+Open the Deep_Learning folder and run `python GANs.py --path /input ` where --path path to input dataset that contains reflection images.
+
+# Results & Limitations
+
+1. **Averaging :** We have done averaging by taking 5,10 and 20 number of input images.
+
+![average](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/averaging.JPG)
+
+**Limitations :** Averaging requires set of images to remove reflection.
+
+2. **Independent Component Analysis :** It takes two images as input. As in this method, the images is a mixture of some ratio two images and our goal to separate the two images. We have generated the images for testing.
+
+![ICA](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/ICA.JPG)
+
+**Limitations :** The techniques employed here, work under their underlying assumptions, ICA requires two same layers being at different polarisation angles, which is a rare phenomenon. 
+
+3.  **Relative Smoothness :** Images from SIR2 benchmark dataset are used to remove reflection.
+
+![RS](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/Relative_Smoothness.JPG)
+
+**Limitations :** Relative smoothness removes reflections which are smooth in nature.
+
+4. **Reflection Suppression via Convex Optimization :** 
+
+![RS](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/reflect_Suppress.JPG)
+
+**Limitations :** Reflective suppress tries to suppress reflection, as parameter h increases the image tends to more blur.
+
 5. **Reflection Removal using Deep Learning :** 
 
-# Results 
+![DL](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/GANs.JPG)
+
+# Contributors
+
+[Arti Singh](https://github.com/Arti2512)
+
+[Neha Goyal](https://github.com/Neha-16)
+
+# References
+
+1. [Separating reflections and lighting using independent components analysis.](https://dspace.mit.edu/bitstream/handle/1721.1/6675/AIM-1647.pdf?sequence...)
+
+2. [Single image layer separation using relative smoothness.](https://openaccess.thecvf.com/content_cvpr_2014/papers/Li_Single_Image_Layer_2014_CVPR_paper.pdf)
+
+3. [Fast Single Image Reflection Suppression via Convex Optimization.](https://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Fast_Single_Image_Reflection_Suppression_via_Convex_Optimization_CVPR_2019_paper.pdf)
+
+4. [Single Image Reflection Removal Based on GAN With Gradient Constraint.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8868089) & [Implementation](https://github.com/ryo-abiko/GCNet)
