@@ -6,29 +6,8 @@ The image of an object can vary dramatically depending on lighting, specularitie
 
 
 # Dependencies
-python
 
-opencv
-
-Pytorch (torch & torchvision)
-
-imutils
-
-matplotlib
-
-argparse
-
-numpy
-
-skimage
-
-tqdm
-
-pandas
-
-scipy
-
-MATLAB
+[Python](https://www.python.org/downloads/), [OpenCV](https://pypi.org/project/opencv-python/), [Pytorch](https://pytorch.org/)(torch & torchvision), [Imutils](https://pypi.org/project/imutils/), [Matplotlib](https://pypi.org/project/matplotlib/), [Argparse](https://pypi.org/project/argparse/), [NumPy](https://pypi.org/project/numpy/), [Skimage](https://scikit-image.org/docs/stable/install.html), [Pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html), [SciPy](https://pypi.org/project/scipy/) and, [MATLAB](https://in.mathworks.com/matlabcentral/answers/105854-how-can-i-install-matlab-or-other-mathworks-products-on-an-offline-machine).
 
 # Dataset
 
