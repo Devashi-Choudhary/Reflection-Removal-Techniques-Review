@@ -38,11 +38,11 @@ The sample image used for testing is provided by [SIR2 benchmark dataset](https:
 
 1. **Averaging :** For given set of images, we perform averaging for reflection removal.
 
-Open the Averaging folder and run `python Averaging.py -i 5_images_lowers` where -i is path to folder which contains set of images. 
+Open the `Averaging` folder and run `python Averaging.py -i 5_images_lowers` where -i is path to folder which contains set of images. 
 
 2. **Independent Component Analysis :**   Based on concept of reflection of light and independence of underlying distribution in reflected image, two images captured at different polarising orientation are taken and solved for:   Y=MX  , where Y = [y1, y2] , two images ,  M is mixing matrix [a,b; c,d] (each denoting the amount of reflection) and  X= [x1,x2] are painting and reflecting components in the two images.
 
-Open the ICA folder and run `python ICA.py -i1 1.png -i2 2.png` where -i1 and -i2 are path to input images.
+Open the `ICA` folder and run `python ICA.py -i1 1.png -i2 2.png` where -i1 and -i2 are path to input images.
 
 **Note :** For next two techniques, you need MATLAB software.
 
@@ -56,7 +56,9 @@ You can go [here](https://github.com/alexch1/ImageProcessing) and run `reflecSup
 
 5. **Reflection Removal using Deep Learning :** Single-image reflection removal method based on generative adversarial networks. 
 
-Open the Deep_Learning folder and run `python GANs.py --path /input ` where --path path to input dataset that contains reflection images.
+First you need to download [this](https://drive.google.com/drive/u/0/folders/0BweuXsx8bG7mfmlkbjFKZ2tTd0YzZ3dUUThnM0tCWklrMjhmXzM0YjBmU3RmUWc0YXVaTXc) and place inside `/Deep_Learning` folder. 
+
+Now, open the `Deep_Learning` folder and run `python GANs.py --path /input ` where --path path to input dataset that contains reflection images.
 
 # Results & Limitations
 
