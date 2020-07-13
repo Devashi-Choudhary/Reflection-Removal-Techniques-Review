@@ -49,7 +49,7 @@ Now, open the `Deep_Learning` folder and run `python GANs.py --path /input ` whe
 
 2. **Independent Component Analysis :** It takes two images as input. As in this method, the images is a mixture of some ratio two images and our goal to separate the two images. We have generated the images for testing.
 
-![ICA](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/ICA.JPG)
+![ICA](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/ICA1.JPG)
 
 **Limitations :** The techniques employed here, work under their underlying assumptions, ICA requires two same layers being at different polarisation angles, which is a rare phenomenon. 
 
