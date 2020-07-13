@@ -69,6 +69,7 @@ Now, open the `Deep_Learning` folder and run `python GANs.py --path /input ` whe
 
 ![DL](https://github.com/Devashi-Choudhary/Reflection-Removal-Techniques-Review/blob/master/Readme_Images/GANs.JPG)
 
+**Note :** For more details. go through [Reflection Removal Techniques : Review](https://medium.com/@Devashi_Choudhary/reflection-removal-techniques-review-9338bd3433)
 # Contributors
 
 [Arti Singh](https://github.com/Arti2512)
